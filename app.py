@@ -8,7 +8,15 @@ import tensorflow as tf
 from tensorflow.keras.models import load_model
 import io
 
-model = load_model('C:/Users/kshit/Desktop/DL Lab Miniproj/free-spoken-digit-dataset-master/data_extraction/model_cnn_2.h5')  
+import gdown
+from tensorflow.keras.models import load_model
+
+url = 'https://drive.google.com/file/d/1gZKXdg3_jisg8io0INQ_ijqJqcSPTH84'
+output = 'model_cnn_2.h5'
+gdown.download(url, output, quiet=False)
+
+# Load the model
+model = load_model(output)
 
 def convert_to_spectrogram(raw_data, sr):
     spect = librosa.feature.melspectrogram(y=raw_data, sr=sr, n_mels=64) 
