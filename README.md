@@ -1,8 +1,6 @@
 # Audio-Classification (Spoken Digits)
 
-## Goal
-Classify audio recordings of spoken digits (0–9) based on extracted acoustic features.
----
+### Goal : Classify audio recordings of spoken digits (0–9) based on extracted acoustic features.
 
 ## Key Features
 
