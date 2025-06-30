@@ -1,10 +1,10 @@
 # Audio-Classification (Spoken Digits)
 
-## 🎯 Goal
+## Goal
 Classify audio recordings of spoken digits (0–9) based on extracted acoustic features.
 ---
 
-## 🔍 Key Features
+## Key Features
 
 - **Speaker Diversity**: Includes recordings from multiple speakers with different genders, accents, and countries, all speaking English.
 - **Feature Extraction**: Uses Mel-Frequency Cepstral Coefficients (MFCC), Chroma, and Spectrogram features for audio representation.
@@ -12,7 +12,7 @@ Classify audio recordings of spoken digits (0–9) based on extracted acoustic f
 
 ---
 
-## 📊 Data Description
+## Data Description
 
 | Feature         | Description                                      |
 |----------------|--------------------------------------------------|
@@ -24,7 +24,7 @@ Classify audio recordings of spoken digits (0–9) based on extracted acoustic f
 | `Chroma`        | Chroma features (array)                         |
 | `Spectrogram`   | Spectrogram features (array)                    |
 
-### 🧑‍🎤 Speaker Metadata
+### Speaker Metadata
 
 | Speaker   | Gender | Accent      | Language |
 |-----------|--------|-------------|----------|
@@ -42,7 +42,7 @@ Classify audio recordings of spoken digits (0–9) based on extracted acoustic f
 
 ---
 
-## 🧪 Methodology
+## Methodology
 
 ### 🔹 Data Loading and Preprocessing
 - Load audio files and extract MFCC, Chroma, and Spectrogram features.
@@ -68,7 +68,7 @@ Classify audio recordings of spoken digits (0–9) based on extracted acoustic f
 
 ---
 
-## 📊 Results and Findings
+## Results and Findings
 
 The following table summarizes the performance of various deep learning models (CNN and RNN) trained to classify spoken digits based on extracted audio features:
 
@@ -82,7 +82,7 @@ The following table summarizes the performance of various deep learning models (
 
 ---
 
-### ✅ Conclusion
+### Conclusion
 
 - **CNNs outperformed RNNs** overall in this experiment.
 - **Model selection and regularization** play a critical role in achieving good generalization.
